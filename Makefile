@@ -12,3 +12,7 @@ install: sx sx.1
 	cp -f -- sx $(DESTDIR)$(bindir)/sx
 	chmod -- +x $(DESTDIR)$(bindir)/sx
 	cp -f -- sx.1 $(DESTDIR)$(man1dir)/sx.1
+
+uninstall:
+	rm -f -- $(DESTDIR)$(bindir)/sx
+	rm -f -- $(DESTDIR)$(man1dir)/sx.1
